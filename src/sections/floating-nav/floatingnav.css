@@ -1,0 +1,62 @@
+#floating__nav{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #floating__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 90%;
+        z-index: 9;
+        padding: 0 0;
+        background: transparent;
+        transform: translateX(-50%);
+        animation: animateFloatingNav 300ms ease-in-out;
+    }
+    @keyframes animateFloatingNav {
+    
+        from {
+            opacity: 0;
+            top: -5rem;
+        }
+        to {
+            opacity: 1;
+            top: .7rem;
+        }
+    }
+    .scrollspy{
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--border-radius-1);
+        gap: 1rem;
+        padding: .8rem 1.5rem;
+        color: black;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(10px);
+    }
+    #floating__nav a{
+        padding: 0.6rem;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        color: white;
+        display: grid;
+    }
+    #floating__nav li.active a{
+        background: var(--color-primary);
+    }
+    
+}
+
+@media screen and (max-width: 628px){
+    #floating__nav{
+        left: 50%;
+        top: .7rem;
+    }
+    .scrollspy{
+        flex-direction: row;
+        padding: .5rem 1rem;
+    }
+}

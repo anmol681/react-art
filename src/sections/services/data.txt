@@ -1,0 +1,11 @@
+
+
+
+  const data = [
+    {id:1 , title:"21×27cm" , imgFile:'Draw-1.jpg',desc:"This is 21*27 cm charcoal sketch of my client"},
+    {id:2 , title:"27×35cm" ,imgFile:'Draw-1.jpg', desc:"This is 27 × 35cm cm graphite sketch of my client"},
+    {id:3 , title:"35×42cm"  ,imgFile:'Draw-1.jpg',desc:"This is 35 × 42cm cm charcoal and graphite sketch of my client"},
+    {id:4 , title:"35×42cm" ,imgFile:'./services/Draw-1.jpg',desc:"This is 35 × 42cm cm pen sketch for my client"}
+  ]
+
+  export default data
